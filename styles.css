@@ -1,0 +1,136 @@
+/* Импортируем веб-шрифт */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Mono&display=swap');
+
+/* Универсальный селектор */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Базовые стили */
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #b2c541;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#todo-list {
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.task-item .text {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.task-item .delete-button {
+    background-color: transparent;
+    color: red; 
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 24px; 
+    height: 24px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-item .delete-button:hover {
+    background-color: transparent; 
+    color: darkred; 
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+input {
+    border: 2px solid #b2c541; 
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+.button__group {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center; 
+}
+
+button {
+    background-color: #b2c541;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; 
+}
+
+button:hover {
+    background-color: #99a935;
+}
+
+/* Стили для выделения четных и нечетных элементов */
+.even {
+    background-color: lightblue;
+}
+
+.odd {
+    background-color: lightgreen;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+
